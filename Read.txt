@@ -1,0 +1,5 @@
+Sanity Setup : with rohitkulchaniya4369@gmail.com ID     issme new project create kiya uske baad ek command mili unhi ki official website se 
+and 2 folder create hue ek sanity and ek studio(isme Dynamic Routes hai) to agar hum localhost:3000/studio  per jaate hai to hume sanity ka complete setup mil jaata hai 
+Checkout this path once after running the project
+            http://localhost:3000/studio
+Everything is setup Locally
