@@ -1,4 +1,4 @@
-import { auth, signIn, signOut } from '@/auth'
+import { auth, signIn, signOut } from '@/auth' 
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -16,7 +16,7 @@ const Navbar = async() => {
             <div className='flex items-center gap-5 text-black'>
                 {session && session?.user ? (
                     <>
-                        <Link href={"/"}>
+                        <Link href={"/project/create"}>
                             <span className='text-2xl font-sans max-sm:hidden'>Create</span>
                         </Link>     
                         <form action={async () => {
@@ -25,7 +25,7 @@ const Navbar = async() => {
                         }}>
                         <button type='submit' className='text-2xl  rounded-xl'>Logout</button>
                     </form>
-                        <Link href={`/user/sessionid`}> {/* Question mark ka mtlb hai agar username me null aaya to app crash nahi hogi ye undefined return kar dega jisse app crash nahi hogi */}
+                        <Link href={`/user/${session?.user.id}`}> {/* Question mark ka mtlb hai agar username me null aaya to app crash nahi hogi ye undefined return kar dega jisse app crash nahi hogi */}
                             <span className='text-2xl font-sans max-sm:hidden border border-black-200 px-4 py-[6px] rounded-full bg-gray-600 text-white font-medium'>
                                 {session.user?.name?.slice(0,1).toLocaleUpperCase()}
                             </span>
